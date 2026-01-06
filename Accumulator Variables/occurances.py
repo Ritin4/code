@@ -3,7 +3,6 @@ def count_occurance(arr, n):
     for i in arr:
         if i == n:
             count += 1
-    # message = f"Occurance of {n}  in the array is: {count}"
     print("count: ",count)
     return count
 
