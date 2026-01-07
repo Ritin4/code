@@ -34,4 +34,17 @@ c) Empty dictionary
 
 
 4. Aceessing the dictionary 
+
+    - Fetching value using key
+
+        print(person["name"]) # Jason
+
+    - Error occurs when tried to access the non-existing key
+
+        print(person["grade"]) #key error
+
+    - Safe Access
     
+        print(person.get("grade"))       #None
+        print(person.get("grade"), "A")  #A
+
