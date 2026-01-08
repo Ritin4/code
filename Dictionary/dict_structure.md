@@ -44,7 +44,22 @@ c) Empty dictionary
         print(person["grade"]) #key error
 
     - Safe Access
-    
+
         print(person.get("grade"))       #None
         print(person.get("grade"), "A")  #A
+
+5. Adding and updating dictionary items
+
+    person["city"] = "Hyderabd"  #Add
+    person["age"] = 19           #Update
+
+    - In the case of update if the key already exists the value is update,
+        if the key is not existing, a new key value pair will be created.
+
+6. Removing dictionary items
+
+    del person["city"]        #Removes key "city" 
+    age = person.pop("age")   #Removes and returns the value 
+    person.clear()            #Empties the entire dictionary
+
 
