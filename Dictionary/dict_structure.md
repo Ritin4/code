@@ -1,6 +1,6 @@
 1. Dictionary
 
-A dictionary is a built-in data structure that stores key-value pairs.
+A Dictionary is a built-in data structure that stores key-value pairs.
 
 student = {
     "name": "Alice",
@@ -28,12 +28,12 @@ b) Using 'dict()'
 
     person = dict(name="John", age=30)
 
-c) Empty dictionary
+c) Empty Dictionary
 
     persom = {}
 
 
-4. Aceessing the dictionary 
+4. Aceessing the Dictionary 
 
     - Fetching value using key
 
@@ -48,7 +48,7 @@ c) Empty dictionary
         print(person.get("grade"))       #None
         print(person.get("grade"), "A")  #A
 
-5. Adding and updating dictionary items
+5. Adding and updating Dictionary items
 
     person["city"] = "Hyderabd"  #Add
     person["age"] = 19           #Update
@@ -56,10 +56,37 @@ c) Empty dictionary
     - In the case of update if the key already exists the value is update,
         if the key is not existing, a new key value pair will be created.
 
-6. Removing dictionary items
+6. Removing Dictionary items
 
     del person["city"]        #Removes key "city" 
     age = person.pop("age")   #Removes and returns the value 
     person.clear()            #Empties the entire dictionary
 
+7. Looping through Dictionary
+
+    - Looping keys:
+
+            for key in person:
+                print(key)
+    
+    - Looping Values:
+
+            for value in person.values():
+                print(value)
+
+    - Looping key-value pairs:
+            
+            for key, value in person.items():
+                print(key, value)
+
+8. Dictionary Core Methods 
+
+     - d.keys()   #Get all the keys
+     - d.values() #Get all the values
+     - d.items()  #Get all (key-value) pairs
+     - d.update() #Merge two dictionaries \
+            Ex: 
+                d1 = {"a": 1}
+                d2 = {"b": 2}
+                d1.update(d2)
 
