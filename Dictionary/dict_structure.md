@@ -22,7 +22,7 @@ student = {
 
 a) Syntax 
 
-    persom = {"mame": "Jason", "age": "5", "grade": "A"}
+    person = {"mame": "Jason", "age": "5", "grade": "A"}
 
 b) Using 'dict()'
 
@@ -30,7 +30,7 @@ b) Using 'dict()'
 
 c) Empty Dictionary
 
-    persom = {}
+    person = {}
 
 
 4. Aceessing the Dictionary 
