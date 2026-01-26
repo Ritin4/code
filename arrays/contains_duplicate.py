@@ -5,6 +5,11 @@ Output: True if there are duplicates, False if all are distinct
 '''
 
 def contains_duplicate(arr):
+    num_set = set(arr)
+    if len(num_set) < len(arr):
+        return True
+    return False
+
     if not arr:
         return False
 
@@ -30,3 +35,15 @@ def contains_duplicate(arr):
 
 
 print(contains_duplicate([1,2,1,1,1,3,4,5]))
+
+
+#Approach 2
+
+def contains_duplicate_set(arr):
+    num_set = set(arr)
+    if len(num_set) < len(arr):
+        return True
+    return False
+
+print(contains_duplicate_set([1,2,1,1,1,3,4,5]))
+print(contains_duplicate_set([1,2,3,4,5]))
